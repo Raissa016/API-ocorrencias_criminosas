@@ -26,7 +26,7 @@ def remover_acentos(txt):
     return normalize('NFKD', txt).encode('ASCII', 'ignore').decode('ASCII')
 
 #Teste
-texto = remover_acentos('Raíssâáó') 
+texto = remover_acentos('Teste íncrivel') 
 print(texto)
 
 # Funcao que padroniza textos para facilitar o tramento de entradas
@@ -39,5 +39,5 @@ def padronizar_texto (texto):
     return texto 
 
 # Teste
-texto = padronizar_texto('Raíssa-Ellen')
+texto = padronizar_texto('Trabalho-API incrível')
 print(texto)
